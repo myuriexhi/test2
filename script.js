@@ -10,10 +10,9 @@ count++;
 }
 }
 
+
 }
 console.log(count);
-
-
 
   Array.prototype.chunk = function(size) {
     let result = [];
@@ -24,7 +23,7 @@ console.log(count);
         
     return result;
 }
-const ar = [2,1,2,3,3,4,3,2,4];
+const ar = [2,1,2,3,3,4,3,2,4,1];
 console.log(ar.chunk(2));
 
 
