@@ -31,8 +31,6 @@ diagonalSort(matrix, true);
 
 //////////////////////////////////////////////////////////////////////////////
 
-console.log("daigonal Matrix");
-
 const matrix1 = [
   [1, 3, 9, 4],
   [9, 5, 7, 7],
@@ -72,5 +70,3 @@ for (let k = 0; k <= maxLength - 1; k++) {
   result.push(tempResult);
 }
 console.log(result);
-
-/////////////////////////////////////////////////////////////////
