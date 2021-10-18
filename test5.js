@@ -16,37 +16,44 @@ function countTriplets(n, sum) {
 
 let sum = 12;
 console.log(countTriplets(arr.length, sum));
-*/
 
-/*
-function CountTriplets(arr, queries) {
+
+// given conditions
+function CountTriplets(arr, n) {
   let cnt = 0;
 
   for (let i = 0; i < n; i++)
     for (let j = i + 1; j < n; j++)
       for (let k = j + 1; k < n; k++)
+        // If it satisfy the
+        // given conditions
         if (arr[k] < arr[i] && arr[i] < arr[j]) {
           cnt += 1;
         }
+
+  // Return the final count
   return cnt;
 }
 
-let arr = [1, 2, 3, 4, 5];
+// Given array arr[]
+let arr = [2, 5, 1, 3, 0];
 
 let n = arr.length;
 
-console.log(CountTriplets(arr.length, queries.length));
+// Function Call
+console.log(CountTriplets(arr, n));
 */
 
-const Arr = [1, 2, 2, 1, 2, 1, 2];
+/////////////////////////////////////////////////////////////////////////////
+
+const Arr = [1, 2, 4, 1, 4, 1, 2];
 const queries = [
-  [1, 1, 2],
+  [1, 4, 4],
   [1, 2, 1],
 ];
 let n = Arr.length;
 let m = queries.length;
 let findTheTriples = [0];
-
 function countTriplets(x1, x2, x3) {
   let ans = 0;
   for (let i = 0; i < n; i++) {
@@ -58,7 +65,7 @@ function countTriplets(x1, x2, x3) {
         if (x1 == y1) {
           if (x2 == y2) {
             if (x3 == y3) {
-              ans = ans + 1;
+              ans += 1;
             }
           }
         }
