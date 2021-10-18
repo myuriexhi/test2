@@ -46,10 +46,11 @@ console.log(CountTriplets(arr, n));
 
 /////////////////////////////////////////////////////////////////////////////
 
-const Arr = [1, 2, 4, 1, 4, 1, 2];
+const Arr = [1, 2, 3, 4, 5];
 const queries = [
-  [1, 4, 4],
-  [1, 2, 1],
+  [1, 2, 4],
+  [2, 4, 3],
+  [1, 1, 1],
 ];
 let n = Arr.length;
 let m = queries.length;
