@@ -1,7 +1,4 @@
-const grid = [
-  [0, 2, 1],
-  [5, 4, 0],
-];
+const grid = [[2], [2], [2], [2], [2], [2], [6]];
 const hasValidPath = function (grid) {
   validPaths = [
     //  4 directions (up, right, down ,left)
@@ -73,28 +70,3 @@ const hasValidPath = function (grid) {
 };
 
 console.log(hasValidPath(grid));
-
-/////////////////////////////////////////////////////////////////////////////////
-/*
-var hasValidPath = function(grid) {
-  const m = grid.length;
-  const n = grid[0].length;
-  
-  const dirs = {
-      "left": [0, -1, "right"],
-      "right": [0, 1, "left"],
-      "up": [-1, 0, "down"],
-      "down": [1, 0, "up"]
-  };
-  
-  const paths = {
-      0: ["left", "right"],
-      1: ["up", "down"],
-      2: ["left", "down"],
-      3: ["right", "down"],
-      4: ["up", "left"],
-      5: ["up", "right"]
-  };
-
-
-*/
